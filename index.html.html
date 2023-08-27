@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welkamm</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Kanit:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3828133360.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<!-----navbar------>
+    <div id="header">
+    <div class="navbar">
+        <nav>
+            <img src="gambar/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="headertext">
+            <p>Mahasiswa Informatika Unud</p>
+            <h1>Haloo, Perkenalkan Aku Farel</h1>
+        </div>
+    </div>
+    </div>
+<!-----navbar------>
+<!-----about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="gambar/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisi
+                        ing elit. Placeat id, ullam architecto reprehenderit at dolorum et doloribus, optio sit
+                        necessitatibus sint quasi! Quibusdam quam tenetur alias 
+                        iure ea doloremque animi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error id rep
+                        ellat neque! Quia aspernatur eos, in deleniti sequi totam neque cum pariatur, omnis, saepe 
+                        modi velit sapiente nobis. Labore, illo!</p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>none</span><br>Aing teh lom bisa apa apa</li>
+                            <li><span>none</span><br>Aing teh lom bisa apa apa</li>
+                            <li><span>none</span><br>Aing teh lom bisa apa apa</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>none</span><br>Aing teh lom bisa apa apa</li>
+                            <li><span>none</span><br>Aing teh lom bisa apa apa</li>
+                            <li><span>none</span><br>Aing teh lom bisa apa apa</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>Udayana University, Computer Science</li>
+                            <li><span>2019-2022</span><br>SMAN 1 Kuta Selatan, As a Student</li>
+                            <li><span>2017-2019</span><br>SMPN 1 Kuta Selatan, As a Student</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----about------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HTML</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit distinctio maiores at itaque aperiam suscipit error harum! Tempora veniam odit iusto. Ducimus possimus reiciendis beatae dignissimos distinctio odio, vel perspiciatis?</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>CSS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit distinctio maiores at itaque aperiam suscipit error harum! Tempora veniam odit iusto. Ducimus possimus reiciendis beatae dignissimos distinctio odio, vel perspiciatis?</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>C</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit distinctio maiores at itaque aperiam suscipit error harum! Tempora veniam odit iusto. Ducimus possimus reiciendis beatae dignissimos distinctio odio, vel perspiciatis?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab"); 
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+</body>
+</html>
